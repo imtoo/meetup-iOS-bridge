@@ -1,0 +1,6 @@
+framework module Pods_meetup {
+  umbrella header "Pods-meetup-umbrella.h"
+
+  export *
+  module * { export * }
+}
