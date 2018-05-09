@@ -1,17 +1,4 @@
-#import <MapKit/MapKit.h>
-
 #import <React/RCTViewManager.h>
 
-@interface RNTMapManager : RCTViewManager
-@end
-
-@implementation RNTMapManager
-
-RCT_EXPORT_MODULE()
-
-- (UIView *)view
-{
-  return [[MKMapView alloc] init];
-}
-
+@interface RCT_EXTERN_MODULE(RNMapManager, RCTViewManager)
 @end

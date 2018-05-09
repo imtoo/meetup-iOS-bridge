@@ -1,3 +1,3 @@
 import { requireNativeComponent } from 'react-native';
 
-module.exports = requireNativeComponent('RNTMap', null);
+module.exports = requireNativeComponent('RNMap', null);

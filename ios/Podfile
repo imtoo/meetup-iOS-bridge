@@ -18,6 +18,7 @@ target 'meetup' do
 	]
 
 	pod 'yoga', :path => "#{node_modules_path}/react-native/ReactCommon/yoga"
+	pod 'Charts'
 
 	def change_lines_in_file(file_path, &change)
 		print "Fixing #{file_path}...\n"
