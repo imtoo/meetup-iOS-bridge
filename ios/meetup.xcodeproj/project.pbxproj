@@ -10,8 +10,8 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004C5622099EB00002ADA14 /* AppDelegate.swift */; };
-		90206E7C20A1ADF80014FDE3 /* MapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90206E7B20A1ADF80014FDE3 /* MapManager.m */; };
-		90206EAF20A2DEA80014FDE3 /* RNMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90206EAE20A2DEA80014FDE3 /* RNMapManager.swift */; };
+		90206E7C20A1ADF80014FDE3 /* ChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90206E7B20A1ADF80014FDE3 /* ChartManager.m */; };
+		90206EAF20A2DEA80014FDE3 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90206EAE20A2DEA80014FDE3 /* Chart.swift */; };
 		F505B29A8E32801017A73169 /* Pods_meetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BBCE4E6677A026A1067892 /* Pods_meetup.framework */; };
 /* End PBXBuildFile section */
 
@@ -298,8 +298,8 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9004C5622099EB00002ADA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90206E7B20A1ADF80014FDE3 /* MapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapManager.m; sourceTree = "<group>"; };
-		90206EAE20A2DEA80014FDE3 /* RNMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNMapManager.swift; sourceTree = "<group>"; };
+		90206E7B20A1ADF80014FDE3 /* ChartManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartManager.m; sourceTree = "<group>"; };
+		90206EAE20A2DEA80014FDE3 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		AF9E5BA626D2FC1A5B5E725D /* Pods-meetup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meetup.release.xcconfig"; path = "Pods/Target Support Files/Pods-meetup/Pods-meetup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -399,8 +399,8 @@
 			isa = PBXGroup;
 			children = (
 				9004C5622099EB00002ADA14 /* AppDelegate.swift */,
-				90206E7B20A1ADF80014FDE3 /* MapManager.m */,
-				90206EAE20A2DEA80014FDE3 /* RNMapManager.swift */,
+				90206E7B20A1ADF80014FDE3 /* ChartManager.m */,
+				90206EAE20A2DEA80014FDE3 /* Chart.swift */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -974,8 +974,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90206EAF20A2DEA80014FDE3 /* RNMapManager.swift in Sources */,
-				90206E7C20A1ADF80014FDE3 /* MapManager.m in Sources */,
+				90206EAF20A2DEA80014FDE3 /* Chart.swift in Sources */,
+				90206E7C20A1ADF80014FDE3 /* ChartManager.m in Sources */,
 				9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1004,6 +1004,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RN8K5DHM9T;
 				INFOPLIST_FILE = meetup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1031,6 +1032,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RN8K5DHM9T;
 				INFOPLIST_FILE = meetup/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -11,7 +11,7 @@ import {
 	Text,
 	View
 } from 'react-native';
-import MapView from './MapView';
+import ChartView from './ChartView';
 
 type Props = {};
 
@@ -22,7 +22,11 @@ export default class App extends Component<Props> {
 				<View style={styles.navigation}>
 					<Text style={styles.navigationText}>Navigation Bar</Text>
 				</View>
-				<MapView style={styles.map} />
+				<ChartView
+					xValues={["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]}
+					yValues={[20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]}
+					style={styles.map}
+				/>
 			</View>
 		);
 	}
