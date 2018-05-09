@@ -4,8 +4,8 @@ import React, { Component } from 'react';
 import { requireNativeComponent } from 'react-native';
 
 type Props = {|
-	+xValues: [String],
-	+yValues: [Int],
+	+xValues: string[],
+	+yValues: number[],
 |};
 
 class ChartView extends Component<Props> {
@@ -22,12 +22,7 @@ class ChartView extends Component<Props> {
     }
 }
 
-ChartView.propTypes = {
-    xValues: PropTypes.array,
-    yValues: PropTypes.array,
-};
-
 const MODULE_NAME = 'Chart'; // it's always looking for *Manager
-const Chart = requireNativeComponent(MODULE_NAME, ChartView);
+const Chart = requireNativeComponent(MODULE_NAME, null);
 
 export default ChartView;
