@@ -40,21 +40,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     eventEmitter.bridge = rootView?.bridge
     eventEmitter.sendData()
 
-    self.scheduleTimeInterval()
+    self.scheduleNotificationCenter()
 
     return true
   }
+}
 
-  @objc func kua() {
-    PeriodicalDataManager().sendData()
-  }
-
-  func scheduleTimeInterval() {
+// MARK: - Schedule Notification Center
+extension AppDelegate {
+  fileprivate func scheduleNotificationCenter() {
     timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.sendData), userInfo: nil, repeats: true)
   }
 
   @objc
-  private func sendData() {
-    NotificationCenter.default.post(name: NSNotification.Name("hello"), object: "some data")
+  fileprivate func sendData() {
+    let data = ["Hola,", "amigo!", "Que", "pasa?"]
+    NotificationCenter.default.post(name: NCDataManagerName, object: nil, userInfo: ["data": data])
   }
 }

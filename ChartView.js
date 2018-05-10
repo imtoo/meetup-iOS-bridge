@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { NativeEventEmitter, NativeModules, requireNativeComponent } from 'react-native';
 
-const { PeriodicalDataManager } = NativeModules;
+const { NotificationCenterDataManager } = NativeModules;
 
-const eventEmitter = new NativeEventEmitter(PeriodicalDataManager);
+const NCEventEmitter = new NativeEventEmitter(NotificationCenterDataManager);
+const NCEventName = 'NCPeriodicalData'
 
 type Props = {|
 	+xValues: string[],
@@ -15,7 +16,15 @@ type Props = {|
 class ChartView extends Component<Props> {
 
     componentDidMount() {
-        eventEmitter.addListener('PeriodicalData', (data: any) => console.log('it is there!', data))
+        NCEventEmitter.addListener(NCEventName, this.handleNCEvent.bind(this))
+    }
+
+    componentWillUnmount() {
+        NCEventEmitter.removeListener(NCEventName, this.handleNCEvent.bind(this))
+    }
+
+    handleNCEvent(data: any) {
+        console.log('NC data: ', data)
     }
 
     render() {
