@@ -12,8 +12,8 @@
 //@objc
 //class ChartView: UIView {
 //  var barChartView = BarChartView()
-//    var xValues: [String] = []
-//    var yValues: [Double] = []
+//    @objc var xValues: [String] = []
+//    @objc var yValues: [Double] = []
 //
 //  override public func layoutSubviews() {
 //    super.layoutSubviews()
