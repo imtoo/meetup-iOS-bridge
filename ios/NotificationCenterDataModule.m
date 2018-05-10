@@ -8,5 +8,5 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_MODULE(NotificationCenterDataManager, NSObject)
+@interface RCT_EXTERN_MODULE(NotificationCenterData, NSObject)
 @end

@@ -1,5 +1,5 @@
 //
-//  DirectEventDataManager.swift
+//  DirectEventData.swift
 //  meetup
 //
 //  Created by Michal Mondik on 10/05/2018.
@@ -8,9 +8,9 @@
 
 import React
 
-@objc(DirectEventDataManager)
-class DirectEventDataManager: RCTEventEmitter {
-  let eventName = "DirectEventData2"
+@objc(DirectEventData)
+class DirectEventData: RCTEventEmitter {
+  let eventName = "DirectEventData"
 
   override func supportedEvents() -> [String]! {
     return [eventName]

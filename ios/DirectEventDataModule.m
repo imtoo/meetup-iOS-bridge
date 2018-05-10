@@ -8,5 +8,5 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_MODULE(DirectEventDataManager, NSObject)
+@interface RCT_EXTERN_MODULE(DirectEventData, NSObject)
 @end

@@ -69,7 +69,7 @@ extension AppDelegate {
   fileprivate func sendDataDirect(timer: Timer) {
     guard let bridge = timer.userInfo as? RCTBridge else { return }
     let data = [1, 2, 3, 4, 5]
-    let eventManager = DirectEventDataManager()
+    let eventManager = DirectEventData()
     eventManager.bridge = bridge // Cannot be set via DI
     eventManager.sendData(data: data)
   }

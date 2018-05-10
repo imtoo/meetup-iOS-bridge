@@ -1,5 +1,5 @@
 //
-//  ChartManager.m
+//  ChartViewManager.m
 //  meetup
 //
 //  Created by Michal Mondik on 10/05/2018.
@@ -9,15 +9,15 @@
 #import <React/RCTViewManager.h>
 #import "meetup-Swift.h"
 
-@interface ChartManager: RCTViewManager
+@interface ChartViewManager: RCTViewManager
 @end
 
-@implementation ChartManager
+@implementation ChartViewManager
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view {
-  Chart *chart = [[Chart alloc] init];
+  ChartView *chart = [[ChartView alloc] init];
   return chart;
 }
 

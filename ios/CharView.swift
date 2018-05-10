@@ -1,5 +1,5 @@
 //
-//  Chart.swift
+//  ChartView.swift
 //  meetup
 //
 //  Created by Michal Mondik on 09/05/2018.
@@ -10,7 +10,7 @@ import UIKit
 import Charts
 
 @objc
-class Chart: UIView {
+class ChartView: UIView {
   var barChartView = BarChartView()
   var xValues: [String] = []
   var yValues: [Double] = []

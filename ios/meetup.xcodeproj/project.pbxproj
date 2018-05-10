@@ -10,11 +10,11 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004C5622099EB00002ADA14 /* AppDelegate.swift */; };
-		90206E7C20A1ADF80014FDE3 /* ChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90206E7B20A1ADF80014FDE3 /* ChartManager.m */; };
-		90206EAF20A2DEA80014FDE3 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90206EAE20A2DEA80014FDE3 /* Chart.swift */; };
-		90BAFB7520A422400037D854 /* NotificationCenterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFB7420A422400037D854 /* NotificationCenterDataManager.swift */; };
+		90206E7C20A1ADF80014FDE3 /* ChartViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90206E7B20A1ADF80014FDE3 /* ChartViewManager.m */; };
+		90206EAF20A2DEA80014FDE3 /* CharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90206EAE20A2DEA80014FDE3 /* CharView.swift */; };
+		90BAFB7520A422400037D854 /* NotificationCenterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFB7420A422400037D854 /* NotificationCenterData.swift */; };
 		90BAFBA820A42A9F0037D854 /* NotificationCenterDataModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBA720A42A9F0037D854 /* NotificationCenterDataModule.m */; };
-		90BAFBCF20A458000037D854 /* DirectEventDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBCE20A458000037D854 /* DirectEventDataManager.swift */; };
+		90BAFBCF20A458000037D854 /* DirectEventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBCE20A458000037D854 /* DirectEventData.swift */; };
 		90BAFBD120A4582B0037D854 /* DirectEventDataModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBD020A4582B0037D854 /* DirectEventDataModule.m */; };
 		F505B29A8E32801017A73169 /* Pods_meetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BBCE4E6677A026A1067892 /* Pods_meetup.framework */; };
 /* End PBXBuildFile section */
@@ -302,11 +302,11 @@
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9004C5622099EB00002ADA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90206E7B20A1ADF80014FDE3 /* ChartManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartManager.m; sourceTree = "<group>"; };
-		90206EAE20A2DEA80014FDE3 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
-		90BAFB7420A422400037D854 /* NotificationCenterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterDataManager.swift; sourceTree = "<group>"; };
+		90206E7B20A1ADF80014FDE3 /* ChartViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewManager.m; sourceTree = "<group>"; };
+		90206EAE20A2DEA80014FDE3 /* CharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharView.swift; sourceTree = "<group>"; };
+		90BAFB7420A422400037D854 /* NotificationCenterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterData.swift; sourceTree = "<group>"; };
 		90BAFBA720A42A9F0037D854 /* NotificationCenterDataModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenterDataModule.m; sourceTree = "<group>"; };
-		90BAFBCE20A458000037D854 /* DirectEventDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectEventDataManager.swift; sourceTree = "<group>"; };
+		90BAFBCE20A458000037D854 /* DirectEventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectEventData.swift; sourceTree = "<group>"; };
 		90BAFBD020A4582B0037D854 /* DirectEventDataModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectEventDataModule.m; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		AF9E5BA626D2FC1A5B5E725D /* Pods-meetup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meetup.release.xcconfig"; path = "Pods/Target Support Files/Pods-meetup/Pods-meetup.release.xcconfig"; sourceTree = "<group>"; };
@@ -407,11 +407,11 @@
 			isa = PBXGroup;
 			children = (
 				9004C5622099EB00002ADA14 /* AppDelegate.swift */,
-				90206E7B20A1ADF80014FDE3 /* ChartManager.m */,
-				90206EAE20A2DEA80014FDE3 /* Chart.swift */,
-				90BAFB7420A422400037D854 /* NotificationCenterDataManager.swift */,
-				90BAFBCE20A458000037D854 /* DirectEventDataManager.swift */,
+				90206E7B20A1ADF80014FDE3 /* ChartViewManager.m */,
+				90206EAE20A2DEA80014FDE3 /* CharView.swift */,
+				90BAFB7420A422400037D854 /* NotificationCenterData.swift */,
 				90BAFBA720A42A9F0037D854 /* NotificationCenterDataModule.m */,
+				90BAFBCE20A458000037D854 /* DirectEventData.swift */,
 				90BAFBD020A4582B0037D854 /* DirectEventDataModule.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -986,13 +986,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90206EAF20A2DEA80014FDE3 /* Chart.swift in Sources */,
+				90206EAF20A2DEA80014FDE3 /* CharView.swift in Sources */,
 				90BAFBD120A4582B0037D854 /* DirectEventDataModule.m in Sources */,
-				90BAFB7520A422400037D854 /* NotificationCenterDataManager.swift in Sources */,
-				90206E7C20A1ADF80014FDE3 /* ChartManager.m in Sources */,
+				90BAFB7520A422400037D854 /* NotificationCenterData.swift in Sources */,
+				90206E7C20A1ADF80014FDE3 /* ChartViewManager.m in Sources */,
 				9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */,
 				90BAFBA820A42A9F0037D854 /* NotificationCenterDataModule.m in Sources */,
-				90BAFBCF20A458000037D854 /* DirectEventDataManager.swift in Sources */,
+				90BAFBCF20A458000037D854 /* DirectEventData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

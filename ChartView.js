@@ -2,12 +2,12 @@
 import React, { Component } from 'react';
 import { NativeEventEmitter, NativeModules, requireNativeComponent } from 'react-native';
 
-const { DirectEventDataManager, NotificationCenterDataManager } = NativeModules;
+const { DirectEventData, NotificationCenterData } = NativeModules;
 
-const NCEventEmitter = new NativeEventEmitter(NotificationCenterDataManager);
+const NCEventEmitter = new NativeEventEmitter(NotificationCenterData);
 const NCEventName = 'NCPeriodicalData';
-const DEventEmitter = new NativeEventEmitter(DirectEventDataManager);
-const DEventName = 'DirectEventData2';
+const DEventEmitter = new NativeEventEmitter(DirectEventData);
+const DEventName = 'DirectEventData';
 
 type PropsType = {|
     +xValues: string[],
@@ -42,7 +42,7 @@ class ChartView extends Component<PropsType> {
     }
 }
 
-const MODULE_NAME = 'Chart'; // it's always looking for *Manager
+const MODULE_NAME = 'ChartView'; // In case of RCTViewManager it's always looking for *Manager suffix - ChartViewManager
 const Chart = requireNativeComponent(MODULE_NAME, null);
 
 export default ChartView;

@@ -1,5 +1,5 @@
 //
-//  NotificationCenterDataManager.swift
+//  NotificationCenterData.swift
 //  meetup
 //
 //  Created by Michal Mondik on 10/05/2018.
@@ -8,10 +8,10 @@
 
 import React
 
-let notificationName = NSNotification.Name("NotificationCenterDataManager")
+let notificationName = NSNotification.Name("NotificationCenterData")
 
-@objc(NotificationCenterDataManager)
-class NotificationCenterDataManager: RCTEventEmitter {
+@objc(NotificationCenterData)
+class NotificationCenterData: RCTEventEmitter {
   let eventName = "NCPeriodicalData"
 
   override init() {
