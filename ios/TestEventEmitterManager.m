@@ -1,5 +1,5 @@
 //
-//  PeriodicalDataManager.m
+//  TestEventEmitterManager.m
 //  meetup
 //
 //  Created by Michal Mondik on 10/05/2018.
@@ -8,6 +8,5 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_MODULE(PeriodicalDataManager, NSObject)
-RCT_EXTERN_METHOD(sendData)
+@interface RCT_EXTERN_MODULE(TestEventEmitterManager, NSObject)
 @end

@@ -14,6 +14,8 @@
 		90206EAF20A2DEA80014FDE3 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90206EAE20A2DEA80014FDE3 /* Chart.swift */; };
 		90BAFB7520A422400037D854 /* PeriodicalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFB7420A422400037D854 /* PeriodicalData.swift */; };
 		90BAFBA820A42A9F0037D854 /* PeriodicalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBA720A42A9F0037D854 /* PeriodicalDataManager.m */; };
+		90BAFBCF20A458000037D854 /* TestEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBCE20A458000037D854 /* TestEventEmitter.swift */; };
+		90BAFBD120A4582B0037D854 /* TestEventEmitterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBD020A4582B0037D854 /* TestEventEmitterManager.m */; };
 		F505B29A8E32801017A73169 /* Pods_meetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BBCE4E6677A026A1067892 /* Pods_meetup.framework */; };
 /* End PBXBuildFile section */
 
@@ -304,6 +306,8 @@
 		90206EAE20A2DEA80014FDE3 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		90BAFB7420A422400037D854 /* PeriodicalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodicalData.swift; sourceTree = "<group>"; };
 		90BAFBA720A42A9F0037D854 /* PeriodicalDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PeriodicalDataManager.m; sourceTree = "<group>"; };
+		90BAFBCE20A458000037D854 /* TestEventEmitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEventEmitter.swift; sourceTree = "<group>"; };
+		90BAFBD020A4582B0037D854 /* TestEventEmitterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestEventEmitterManager.m; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		AF9E5BA626D2FC1A5B5E725D /* Pods-meetup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-meetup.release.xcconfig"; path = "Pods/Target Support Files/Pods-meetup/Pods-meetup.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -406,7 +410,9 @@
 				90206E7B20A1ADF80014FDE3 /* ChartManager.m */,
 				90206EAE20A2DEA80014FDE3 /* Chart.swift */,
 				90BAFB7420A422400037D854 /* PeriodicalData.swift */,
+				90BAFBCE20A458000037D854 /* TestEventEmitter.swift */,
 				90BAFBA720A42A9F0037D854 /* PeriodicalDataManager.m */,
+				90BAFBD020A4582B0037D854 /* TestEventEmitterManager.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
@@ -981,10 +987,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				90206EAF20A2DEA80014FDE3 /* Chart.swift in Sources */,
+				90BAFBD120A4582B0037D854 /* TestEventEmitterManager.m in Sources */,
 				90BAFB7520A422400037D854 /* PeriodicalData.swift in Sources */,
 				90206E7C20A1ADF80014FDE3 /* ChartManager.m in Sources */,
 				9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */,
 				90BAFBA820A42A9F0037D854 /* PeriodicalDataManager.m in Sources */,
+				90BAFBCF20A458000037D854 /* TestEventEmitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

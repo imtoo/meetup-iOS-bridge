@@ -36,6 +36,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.rootViewController = rootViewController
     self.window?.makeKeyAndVisible()
 
+    let eventEmitter = TestEventEmitterManager()
+    eventEmitter.bridge = rootView?.bridge
+    eventEmitter.sendData()
+
     self.scheduleTimeInterval()
 
     return true
