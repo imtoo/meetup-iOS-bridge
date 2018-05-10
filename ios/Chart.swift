@@ -1,3 +1,11 @@
+//
+//  Chart.swift
+//  meetup
+//
+//  Created by Michal Mondik on 09/05/2018.
+//  Copyright © 2018 Blueberry. All rights reserved.
+//
+
 import UIKit
 import Charts
 

@@ -1,3 +1,11 @@
+//
+//  ChartManager.m
+//  meetup
+//
+//  Created by Michal Mondik on 10/05/2018.
+//  Copyright © 2018 Blueberry. All rights reserved.
+//
+
 #import <React/RCTViewManager.h>
 #import "meetup-Swift.h"
 

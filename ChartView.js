@@ -1,7 +1,11 @@
 // @flow
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import { requireNativeComponent } from 'react-native';
+import { NativeEventEmitter, NativeModules, requireNativeComponent } from 'react-native';
+
+const { PeriodicalDataManager } = NativeModules;
+
+const eventEmitter = new NativeEventEmitter(PeriodicalDataManager);
 
 type Props = {|
 	+xValues: string[],
@@ -9,6 +13,11 @@ type Props = {|
 |};
 
 class ChartView extends Component<Props> {
+
+    componentDidMount() {
+        eventEmitter.addListener('PeriodicalData', (data: any) => console.log('it is there!', data))
+    }
+
     render() {
         const { xValues, yValues } = this.props;
 
