@@ -1,4 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
+# iOS Pods
+Pods/
+
 ### Node template
 # Logs
 logs

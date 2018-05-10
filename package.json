@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "app:ios": "yarn kill:packager && (concurrently \"yarn start\" \"sleep 5 && yarn ios\")",
     "kill:packager": "kill-port --port 8081",
-    "ios": "react-native run-ios --simulator=\"iPhone 8 Plus\"",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },

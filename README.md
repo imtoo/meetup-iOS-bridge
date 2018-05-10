@@ -2,13 +2,9 @@
 ### Start packager
 ```bash
 yarn install
+cd ios/
+pod install
+cd ../
 yarn start
 ```
 and then build app from XCode
-
-### Troubleshooting
-In case of weird compile errors with RCT headers run
-```bash
-cd ios
-pod install
-```
