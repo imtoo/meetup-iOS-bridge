@@ -60,7 +60,7 @@
     "flowtype/union-intersection-spacing": 2,
     "flowtype/use-flow-type": 1,
     "flowtype/require-valid-file-annotation": [2, "always"],
-    "no-use-before-define": 0,
+    "no-use-before-define": 0
   },
   "globals": {
     "fetch": false

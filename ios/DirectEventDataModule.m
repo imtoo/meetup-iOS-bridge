@@ -1,5 +1,5 @@
 //
-//  TestEventEmitterManager.m
+//  DirectEventDataModule.m
 //  meetup
 //
 //  Created by Michal Mondik on 10/05/2018.
@@ -8,5 +8,5 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_MODULE(TestEventEmitterManager, NSObject)
+@interface RCT_EXTERN_MODULE(DirectEventDataManager, NSObject)
 @end

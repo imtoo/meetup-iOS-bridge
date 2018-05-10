@@ -1,30 +1,32 @@
 // @flow
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { NativeEventEmitter, NativeModules, requireNativeComponent } from 'react-native';
 
-const { NotificationCenterDataManager } = NativeModules;
+const { DirectEventDataManager, NotificationCenterDataManager } = NativeModules;
 
 const NCEventEmitter = new NativeEventEmitter(NotificationCenterDataManager);
-const NCEventName = 'NCPeriodicalData'
+const NCEventName = 'NCPeriodicalData';
+const DEventEmitter = new NativeEventEmitter(DirectEventDataManager);
+const DEventName = 'DirectEventData2';
 
-type Props = {|
-	+xValues: string[],
-	+yValues: number[],
+type PropsType = {|
+    +xValues: string[],
+    +yValues: number[],
 |};
 
-class ChartView extends Component<Props> {
+const ncSubscription = NCEventEmitter.addListener(
+    NCEventName,
+    (data: string[]) => console.log('NC data: ', data),
+);
+const dSubscription = DEventEmitter.addListener(
+    DEventName,
+    (data: number[]) => console.log('Direct data: ', data),
+);
 
-    componentDidMount() {
-        NCEventEmitter.addListener(NCEventName, this.handleNCEvent.bind(this))
-    }
-
+class ChartView extends Component<PropsType> {
     componentWillUnmount() {
-        NCEventEmitter.removeListener(NCEventName, this.handleNCEvent.bind(this))
-    }
-
-    handleNCEvent(data: any) {
-        console.log('NC data: ', data)
+        ncSubscription.remove();
+        dSubscription.remove();
     }
 
     render() {
@@ -34,7 +36,7 @@ class ChartView extends Component<Props> {
             <Chart
                 xValues={xValues}
                 yValues={yValues}
-                style={{ flex: 1}}
+                style={{ flex: 1 }}
             />
         );
     }

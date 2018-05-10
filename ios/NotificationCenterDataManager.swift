@@ -8,16 +8,15 @@
 
 import React
 
-let NCDataManagerName = NSNotification.Name("NotificationCenterDataManager")
+let notificationName = NSNotification.Name("NotificationCenterDataManager")
 
 @objc(NotificationCenterDataManager)
 class NotificationCenterDataManager: RCTEventEmitter {
-  var timer = Timer()
   let eventName = "NCPeriodicalData"
 
   override init() {
     super.init()
-    NotificationCenter.default.addObserver(self, selector: #selector(self.sendData), name: NCDataManagerName, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(self.sendData), name: notificationName, object: nil)
   }
 
   override func supportedEvents() -> [String]! {

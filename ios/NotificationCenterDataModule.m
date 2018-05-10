@@ -1,5 +1,5 @@
 //
-//  NotificationCenterDataManagerModule.m
+//  NotificationCenterDataModule.m
 //  meetup
 //
 //  Created by Michal Mondik on 10/05/2018.
