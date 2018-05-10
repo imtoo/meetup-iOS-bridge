@@ -18,21 +18,22 @@ target 'meetup' do
 	]
 
 	pod 'yoga', :path => "#{node_modules_path}/react-native/ReactCommon/yoga"
+	pod 'Charts'
 
 	def change_lines_in_file(file_path, &change)
-	print "Fixing #{file_path}...\n"
+		print "Fixing #{file_path}...\n"
 
-	contents = []
+		contents = []
 
-	file = File.open(file_path, 'r')
-	file.each_line do | line |
-		contents << line
-	end
-	file.close
+		file = File.open(file_path, 'r')
+		file.each_line do | line |
+			contents << line
+		end
+		file.close
 
-	File.open(file_path, 'w') do |f|
-		f.puts(change.call(contents))
-	end
+		File.open(file_path, 'w') do |f|
+			f.puts(change.call(contents))
+		end
 	end
 
 	post_install do |installer|

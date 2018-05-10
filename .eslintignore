@@ -1,0 +1,8 @@
+**/build/*
+**/coverage/*
+**/dist/*
+**/fixtures/*
+**/flow-typed/*
+**/mochawesome-report/*
+**/node_modules/*
+**/cycle-graph.js
