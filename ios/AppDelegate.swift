@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window?.rootViewController = rootViewController
     self.window?.makeKeyAndVisible()
 
-//    self.scheduleNotificationCenter()
+    self.scheduleNotificationCenter()
 
     return true
   }

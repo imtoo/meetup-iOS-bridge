@@ -11,8 +11,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9004C5622099EB00002ADA14 /* AppDelegate.swift */; };
 		90206EAF20A2DEA80014FDE3 /* CharView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90206EAE20A2DEA80014FDE3 /* CharView.swift */; };
-		9089559420A4A60A00A23C46 /* ChartViewTahak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9089559320A4A60A00A23C46 /* ChartViewTahak.swift */; };
-		9089559620A4A74600A23C46 /* ChartViewManagerTahak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9089559520A4A74600A23C46 /* ChartViewManagerTahak.m */; };
+		909240C820A9FAB8008D52D9 /* ChartViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 909240C720A9FAB8008D52D9 /* ChartViewManager.m */; };
 		90BAFB7520A422400037D854 /* NotificationCenterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFB7420A422400037D854 /* NotificationCenterData.swift */; };
 		90BAFBA820A42A9F0037D854 /* NotificationCenterDataModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 90BAFBA720A42A9F0037D854 /* NotificationCenterDataModule.m */; };
 		F505B29A8E32801017A73169 /* Pods_meetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BBCE4E6677A026A1067892 /* Pods_meetup.framework */; };
@@ -302,8 +301,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9004C5622099EB00002ADA14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90206EAE20A2DEA80014FDE3 /* CharView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharView.swift; sourceTree = "<group>"; };
-		9089559320A4A60A00A23C46 /* ChartViewTahak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewTahak.swift; sourceTree = "<group>"; };
-		9089559520A4A74600A23C46 /* ChartViewManagerTahak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewManagerTahak.m; sourceTree = "<group>"; };
+		909240C720A9FAB8008D52D9 /* ChartViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartViewManager.m; sourceTree = "<group>"; };
 		90BAFB7420A422400037D854 /* NotificationCenterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterData.swift; sourceTree = "<group>"; };
 		90BAFBA720A42A9F0037D854 /* NotificationCenterDataModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenterDataModule.m; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
@@ -406,13 +404,12 @@
 			children = (
 				9004C5622099EB00002ADA14 /* AppDelegate.swift */,
 				90206EAE20A2DEA80014FDE3 /* CharView.swift */,
+				909240C720A9FAB8008D52D9 /* ChartViewManager.m */,
 				90BAFB7420A422400037D854 /* NotificationCenterData.swift */,
 				90BAFBA720A42A9F0037D854 /* NotificationCenterDataModule.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
-				9089559320A4A60A00A23C46 /* ChartViewTahak.swift */,
-				9089559520A4A74600A23C46 /* ChartViewManagerTahak.m */,
 			);
 			name = meetup;
 			sourceTree = "<group>";
@@ -983,11 +980,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				909240C820A9FAB8008D52D9 /* ChartViewManager.m in Sources */,
 				90206EAF20A2DEA80014FDE3 /* CharView.swift in Sources */,
 				90BAFB7520A422400037D854 /* NotificationCenterData.swift in Sources */,
-				9089559420A4A60A00A23C46 /* ChartViewTahak.swift in Sources */,
 				9004C5632099EB00002ADA14 /* AppDelegate.swift in Sources */,
-				9089559620A4A74600A23C46 /* ChartViewManagerTahak.m in Sources */,
 				90BAFBA820A42A9F0037D854 /* NotificationCenterDataModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

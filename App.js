@@ -5,6 +5,7 @@ import {
     Text,
     View,
 } from 'react-native';
+import ChartView from './ChartView';
 
 const xValues = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const yValues = [20.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0];
@@ -14,6 +15,10 @@ const App = () => (
         <View style={styles.navigation}>
             <Text style={styles.navigationText}>Navigation Bar</Text>
         </View>
+        <ChartView
+            xValues={xValues}
+            yValues={yValues}
+        />
     </View>
 );
 
