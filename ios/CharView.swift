@@ -9,11 +9,10 @@
 import UIKit
 import Charts
 
-@objc
 class ChartView: UIView {
   var barChartView = BarChartView()
-  var xValues: [String] = []
-  var yValues: [Double] = []
+  @objc var xValues: [String] = []
+  @objc var yValues: [Double] = []
 
   override public func layoutSubviews() {
     super.layoutSubviews()
@@ -21,20 +20,6 @@ class ChartView: UIView {
     barChartView.frame = frame
 
     self.initChart()
-  }
-
-  @objc
-  func setXValues(_ values: NSArray) {
-    guard let array: [String] = values as? [String] else { return }
-
-    xValues = array
-  }
-
-  @objc
-  func setYValues(_ values: NSArray) {
-    guard let array: [Double] = values as? [Double] else { return }
-
-    yValues = array
   }
 
   private func initChart() {

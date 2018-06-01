@@ -2,8 +2,8 @@
 //  ChartViewManager.m
 //  meetup
 //
-//  Created by Michal Mondik on 10/05/2018.
-//  Copyright © 2018 Blueberry. All rights reserved.
+//  Created by Michal Mondik on 14/05/2018.
+//  Copyright © 2018 Facebook. All rights reserved.
 //
 
 #import <React/RCTViewManager.h>
@@ -13,15 +13,14 @@
 @end
 
 @implementation ChartViewManager
-
 RCT_EXPORT_MODULE()
 
-- (UIView *)view {
-  ChartView *chart = [[ChartView alloc] init];
-  return chart;
+- (UIView *) view {
+  ChartView *view = [[ChartView alloc] init];
+  return view;
 }
 
-RCT_EXPORT_VIEW_PROPERTY(xValues, NSArray);
-RCT_EXPORT_VIEW_PROPERTY(yValues, NSArray);
+RCT_EXPORT_VIEW_PROPERTY(xValues, NSArray)
+RCT_EXPORT_VIEW_PROPERTY(yValues, NSArray)
 
 @end
